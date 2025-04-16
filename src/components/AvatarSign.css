@@ -1,0 +1,62 @@
+.avatar-sign-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .avatar {
+    width: 100px;
+    height: 180px;
+    position: relative;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    transition: all 1s ease;
+  }
+  
+  .avatar.neutral {
+    background-color: #8b8b8b;
+  }
+  
+  .avatar.greeting {
+    background-color: #007bff;
+  }
+  
+  .avatar-body {
+    width: 70px;
+    height: 100px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    margin: 20px auto;
+  }
+  
+  .avatar-head {
+    width: 40px;
+    height: 40px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  
+  .avatar-hands {
+    width: 80px;
+    height: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .avatar-description p {
+    font-size: 16px;
+    margin-top: 20px;
+    color: #333;
+  }
+  
+  @keyframes gestureAnimation {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(10deg); }
+  }
+  

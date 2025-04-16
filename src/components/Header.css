@@ -1,0 +1,89 @@
+/* Header.css */
+.header-container {
+  transition: all 0.3s ease;
+}
+
+.logo-img {
+  transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+  transform: rotate(15deg);
+}
+
+.site-title {
+  color: #2c3e50;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: color 0.3s ease;
+}
+
+.site-title:hover {
+  color: #3498db;
+}
+
+.nav-link {
+  color: #2c3e50 !important;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #3498db !important;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #3498db;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.btn-login {
+  color: #3498db;
+  border-color: #3498db;
+  transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+  background-color: #3498db;
+  color: white;
+}
+
+.btn-signup {
+  background-color: #3498db;
+  border-color: #3498db;
+  transition: all 0.3s ease;
+}
+
+.btn-signup:hover {
+  background-color: #2980b9;
+  border-color: #2980b9;
+}
+
+/* Offcanvas custom styles */
+.offcanvas-header {
+  padding: 1.5rem;
+}
+
+.offcanvas-title {
+  color: #2c3e50;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .nav-link {
+    padding: 0.5rem 0 !important;
+  }
+  
+  .nav-link::after {
+    display: none;
+  }
+}

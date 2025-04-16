@@ -1,0 +1,46 @@
+.signup-container {
+    background-color: #f8f9fa;
+  }
+  
+  .signup-card {
+    background-color: white;
+    border-radius: 10px;
+  }
+  
+  @media (max-width: 576px) {
+    .signup-card {
+      padding: 2rem !important;
+    }
+  }
+  
+  /* Animation for form */
+  .signup-card {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Custom focus styles */
+  .form-control:focus {
+    border-color: #4a6fa5;
+    box-shadow: 0 0 0 0.25rem rgba(74, 111, 165, 0.25);
+  }
+  
+  .btn-primary {
+    background-color: #4a6fa5;
+    border-color: #4a6fa5;
+  }
+  
+  .btn-primary:hover {
+    background-color: #3a5a8f;
+    border-color: #3a5a8f;
+  }
