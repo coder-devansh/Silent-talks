@@ -8,13 +8,17 @@ const ChatBot = () => {
   const [input, setInput] = useState('');
 
   const handleSend = () => {
-    if (input.trim()) {
-      setMessages([...messages, { sender: 'user', text: input }]);
-      setInput('');
-      setTimeout(() => {
-        setMessages([...messages, { sender: 'user', text: input }, { sender: 'bot', text: 'I am here to help!' }]);
-      }, 1000);
-    }
+    if (!input.trim()) return;
+
+    const userMessage = { sender: 'user', text: input };
+    setMessages(prev => [...prev, userMessage]);
+    setInput('');
+
+    // Simulate bot response
+    setTimeout(() => {
+      const botReply = { sender: 'bot', text: 'I am here to help!' };
+      setMessages(prev => [...prev, botReply]);
+    }, 1000);
   };
 
   return (
